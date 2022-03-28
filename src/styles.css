@@ -1,12 +1,18 @@
 .resPositive {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: "bold";
     color: green;
 }
 
-/*Cuando los valores no son numeros*/
-.resNegative{
+
+.resNegative {
     font-size: 40px;
     font-weight: "bold";
     color: red;
+}
+
+.resZero {
+    font-size: 40px;
+    font-weight: "Bld";
+    color: yellow;
 }
