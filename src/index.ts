@@ -19,7 +19,7 @@ function buttonSubmitClick() {
             console.log(resultado);
             //divResult.innerText = "El resulatdo es positivo";
             divResult.innerText = resultado.toString();
-            //divResult.innerHTML = String(resultado);
+            //divResult.innerHTML = String(resultado);w
             divResult.className = "resPositive";
         } 
         else if (resultado == 0 ) {
