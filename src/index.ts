@@ -1,34 +1,34 @@
 import './styles.css';
-import converter from './converter';
+//import converter from './converter';
 import sum from './sum';
+
+console.log("Inicio del Programa");
 
 function buttonSubmitClick() {
     //Obtener referencia a inputText
     const numero1 = <HTMLInputElement>document.getElementById('num1');
     const numero2 = <HTMLInputElement>document.getElementById('num2');
     
-    var isNumero = converter(numero1.value);
-    var isNumero2 = converter(numero2.value);
-    
-    let resultado = sum(isNumero,isNumero2,numero1.value, numero2.value);
-
-
-    
-    
-
+    let resultado = sum(numero1.value, numero2.value);
 
     //Actualizar divResult
     const divResult = <HTMLDivElement>document.getElementById('sumRes');
     if (divResult) {
-        if (isNumero && isNumero2) {
+        
+        if (resultado >= 0 ) {
             console.log(resultado);
-            divResult.innerHTML = String(resultado);
+            divResult.innerText = "El resulatdo es positivo";
+            divResult.innerText = resultado.toString();
+            //divResult.innerHTML = String(resultado);
             //TODO: Implementa la asignación del atributo className con valor 'palindrome'
-            divResult.className = "resSuma";
+            divResult.className = "resPositive";
         } else {
-            divResult.innerText = 'Los valores no son numeros'
+            console.log(resultado);
+            divResult.innerText = "El resultado es Negativo";
+            divResult.innerText = resultado.toString();
+            //divResult.innerHTML = String(resultado);
             //TODO: Asigna a la propiedad innerText de divResult el valor 'The word is not palindrome, sorry.'
-            divResult.className = "errorNum";
+            divResult.className = "resNegative";
         }
     }
 }
