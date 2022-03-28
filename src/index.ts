@@ -28,12 +28,17 @@ function buttonSubmitClick() {
             //divResult.innerText = "El resultado es cero";
             divResult.innerText = resultado.toString();
             divResult.className = "resZero";
-        }else {
+        }
+        else if (resultado < 0) {
             console.log(resultado);
             //divResult.innerText = "El resultado es Negativo";
             divResult.innerText = resultado.toString();
             //divResult.innerHTML = String(resultado);
             divResult.className = "resNegative";
+        } else {
+            console.log("NO NUMBER");
+            divResult.innerText = "ERROR";
+            divResult.className = "resError";
         }
     }
 }

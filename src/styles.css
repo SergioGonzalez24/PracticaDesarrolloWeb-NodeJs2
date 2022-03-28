@@ -13,6 +13,64 @@
 
 .resZero {
     font-size: 40px;
-    font-weight: "Bld";
+    font-weight: "Bold";
     color: yellow;
+}
+
+.resError {
+    font-size: 40px;
+    font-weight: "Bold";
+    color: blue;
+}
+
+.buttonSuma {
+    display: inline-flex;
+    height: 40px;
+    padding: 0;
+    background: rgb(2, 206, 172);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buttonSuma:hover {
+    background: rgb(15, 102, 87);
+}
+
+.buttonSuma:active {
+    background: rgb(6, 39, 33);
+}
+
+.button__text, .button__icon {
+    display: inline-flex;
+    align-items:center;
+    padding: 0 24px;
+    color: white;
+    height: 100%;
+
+}
+
+.cuadroNum1, .cuadroNum2 {
+    display: inline-flex;
+    padding: 10px 24px;
+    background-color: rgb(111, 111, 192);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sumador {
+    font-family: Roboto;
+    font-size: 24px;
+    text-align: center;
 }
