@@ -1,0 +1,12 @@
+.resSuma {
+    font-size: "large";
+    font-weight: "bold";
+    color: black;
+}
+
+/*Cuando los valores no son numeros*/
+.errorNum{
+    font-size: "large";
+    font-weight: "bold";
+    color: red;
+}
