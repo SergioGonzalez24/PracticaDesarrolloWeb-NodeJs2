@@ -17,22 +17,22 @@ function buttonSubmitClick() {
         
         if (resultado > 0 ) {
             console.log(resultado);
-            //divResult.innerText = "El resulatdo es positivo";
-            divResult.innerText = resultado.toString();
-            //divResult.innerHTML = String(resultado);w
+            divResult.innerText = "El resultado es positivo\n"+resultado.toString();
+            //divResult.innerText = resultado.toString();
+            //divResult.innerHTML = String(resultado);
             divResult.className = "resPositive";
         } 
         else if (resultado == 0 ) {
 
             console.log(resultado);
-            //divResult.innerText = "El resultado es cero";
-            divResult.innerText = resultado.toString();
+            divResult.innerText = "El resultado es cero \n"+resultado.toString();
+            //divResult.innerText = resultado.toString();
             divResult.className = "resZero";
         }
         else if (resultado < 0) {
             console.log(resultado);
-            //divResult.innerText = "El resultado es Negativo";
-            divResult.innerText = resultado.toString();
+            divResult.innerText = "El resultado es Negativo \n"+resultado.toString();
+            //divResult.innerText = resultado.toString();
             //divResult.innerHTML = String(resultado);
             divResult.className = "resNegative";
         } else {

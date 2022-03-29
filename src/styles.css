@@ -23,7 +23,7 @@
     color: blue;
 }
 
-.buttonSuma {
+.buttonEjecutar {
     display: inline-flex;
     height: 60px;
     padding: 0;
@@ -38,11 +38,11 @@
     cursor: pointer;
 }
 
-.buttonSuma:hover {
+.buttonEjecutar:hover {
     background: rgb(15, 102, 87);
 }
 
-.buttonSuma:active {
+.buttonEjecutar:active {
     background: rgb(6, 39, 33);
 }
 
