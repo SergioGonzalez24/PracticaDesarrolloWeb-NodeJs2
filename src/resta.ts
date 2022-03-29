@@ -7,7 +7,7 @@ function resta(num1:string, num2:string):number {
     
     var resultado = a-b;
     console.log(resultado);
-    return a + b;
+    return a - b;
 }
 
 
